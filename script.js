@@ -24,8 +24,8 @@ console.log('addDivs ran');
 };//end of addDivsAndButtons
 
 var removeDivAndButtons =function (){
-$('.box').remove();
-console.log('removal ran');
+$('#delete').parent().parent().remove();
+console.log('removal run');
 };//end of removeDivAndButtons
 
 }); // end of document
