@@ -11,10 +11,21 @@ addDivsAndButtons();
 console.log('button clicked')
 });//end of button click
 
+//button push delete appended div
+$('#box-fields').on('click','#delete', function(){
+removeDivAndButtons();
+console.log('delete clicked');
+})
+
+
 var addDivsAndButtons = function(){
 $('#box-fields').append('<div class="box"><p>' + click + '</p><p><button id="swap">Swap</button><button id="delete">Delete</button></p></div>');
 console.log('addDivs ran');
-};
+};//end of addDivsAndButtons
 
+var removeDivAndButtons =function (){
+$('.box').remove();
+console.log('removal ran');
+};//end of removeDivAndButtons
 
 }); // end of document
